@@ -1,0 +1,110 @@
+/* =========================
+   BASE
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(180deg, #0b0f14 0%, #111827 100%);
+  color: #e5e7eb;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* =========================
+   HOME
+========================= */
+.home-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.glow-logo h1 {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+  color: #f9fafb;
+}
+
+.glow-logo span {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.start-btn,
+.end-btn {
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.start-btn:hover,
+.end-btn:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   CALL STAGE
+========================= */
+.call-stage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+}
+
+/* =========================
+   AVATARS
+========================= */
+.avatars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 220px;
+  margin-bottom: 24px;
+}
+
+.avatar-panel {
+  background: transparent !important;
+}
+
+
+.avatar-panel h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #d1d5db;
+}
+
+.avatar-circle {
+  background: #1f2933; /* dark neutral */
+}
+
+
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* speaking indicator – subtle, not ugly */
+.avatar-panel.speaking .avatar-circle {
+  border-color: #e5e7eb;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
